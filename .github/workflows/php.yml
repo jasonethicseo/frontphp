@@ -38,4 +38,5 @@ jobs:
             --application-name codedeploy-front-app-sjy \
             --deployment-group-name codedeploy-front-group-970728 \
             --s3-location bucket=codedeploy-front-sjy,key=${{ github.sha }}.zip,bundleType=zip \
+            --deployment-config-name CodeDeployDefault.AllAtOnce \
             --file-exists-behavior OVERWRITE
