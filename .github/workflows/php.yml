@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to CodeDeploy
         run: |
           aws deploy create-deployment \
-            --application-name MyCodeDeployApp \
-            --deployment-group-name MyDeploymentGroup \
-            --s3-location bucket=your-s3-bucket-name,key=${{ github.sha }}.zip,bundleType=zip \
+            --application-name codedeploy-front-app-sjy \
+            --deployment-group-name codedeploy-front-group-970728 \
+            --s3-location bucket=codedeploy-front-sjy,key=${{ github.sha }}.zip,bundleType=zip \
             --file-exists-behavior OVERWRITE
