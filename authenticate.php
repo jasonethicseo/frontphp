@@ -3,7 +3,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Java 백엔드 URL 설정
-$javaBackendUrl = 'http://internal-ec2-back-alb-sjy-1768226706.us-west-2.elb.amazonaws.com:8080/authenticate'; // 'your-app-name'을 실제 애플리케이션 이름으로 변경하세요.
+$javaBackendUrl = 'http://internal-ec2-back-alb-sjy-313901153.us-west-2.elb.amazonaws.com:8080/authenticate'; // 'your-app-name'을 실제 애플리케이션 이름으로 변경하세요.
 
 // 데이터 배열 생성
 $data = array('username' => $username, 'password' => $password);
